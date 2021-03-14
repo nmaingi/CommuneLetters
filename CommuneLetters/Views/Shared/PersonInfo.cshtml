@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Tell me about yourself";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form>
+    <div class="form-group">
+        <label for="=Name">What is your name</label>
+        <input name="Name" type="text" />
+    </div>
+    <div class="form-group">
+        <label for="Essay">Tell me about yourself</label>
+        <textarea name="Essay" rows="10" cols="30"></textarea>
+    </div>
+
+    
+    <div>
+        <input type="button" value="Payment" onclick="myPayment()" />
+        <script>
+            function myPayment() {
+                window.location="/user/Payment"
+            }
+        </script>
+   
+    </div>
+
+</form>
+
