@@ -1,0 +1,18 @@
+﻿
+@{    
+    ViewData["Title"] = "";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<!--Add final page design, remove access to main and user pages, add timer to refresh to home page-->
+<form>
+    <p>If page does not direct automatically</p>
+<input type="button" value="Click here" onclick="myRedirect()"/>
+
+<script>
+    function myRedirect() {
+        window.location ="/home/Index"
+    }
+</script>
+    </form>

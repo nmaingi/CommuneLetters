@@ -1,21 +1,22 @@
 ﻿
 @{
-    ViewData["Title"] = "Tell me about yourself";
+    ViewData["Title"] = "Let us get to know you";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h3>@ViewData["Title"]</h3>&nbsp;&nbsp;&nbsp;
 
 <form>
+    <!--Add styling-->
     <div class="form-group">
-        <label for="=Name">What is your name</label>
+        <label for="=Name">What would you like us to call you?</label>
         <input name="Name" type="text" />
-    </div>
+    </div>&nbsp;
+    
     <div class="form-group">
-        <label for="Essay">Tell me about yourself</label>
-        <textarea name="Essay" rows="10" cols="30"></textarea>
+        <p>Tell us a little about yourself</p>
+        <textarea name="Essay" rows="10" cols="80"></textarea>
     </div>
 
-    
     <div>
         <input type="button" value="Payment" onclick="myPayment()" />
         <script>

@@ -16,6 +16,9 @@ namespace CommuneLetters.Controllers
         public IActionResult Payment() => View();
 
         [HttpGet]
+        public IActionResult FinalPage() => View();
+
+        [HttpGet]
         public IActionResult FAQs() => View();
     }
 }
