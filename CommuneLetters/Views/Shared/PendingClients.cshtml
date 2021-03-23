@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Client>
+@{
+    ViewData["Title"] = "PendingClients";
+}
+
+<h1>PendingClients</h1>
+
+<table style="width:50%">
+    <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Client e in Model)
+        {
+        <tr>
+            <td>@e.Name</td>
+            <td><a asp-action="Update" asp-route-clientname="@e.Name">Update</a></td>
+            <td>
+                <form asp-action="Remove" method="post">
+                    <input type="hidden" name="clientname" value="@e.Name" />
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

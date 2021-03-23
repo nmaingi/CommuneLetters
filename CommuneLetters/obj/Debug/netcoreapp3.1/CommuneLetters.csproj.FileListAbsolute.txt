@@ -110,3 +110,5 @@ C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Raz
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Payment.cshtml.g.cs
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\PersonInfo.cshtml.g.cs
 C:\Users\Ngina\desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\FinalPage.cshtml.g.cs
+C:\Users\Ngina\desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLogin.cshtml.g.cs
+C:\Users\Ngina\desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\PendingClients.cshtml.g.cs
