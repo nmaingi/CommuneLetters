@@ -106,9 +106,9 @@ C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Com
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.csproj.CopyComplete
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.dll
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.pdb
-C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Faqs.cshtml.g.cs
-C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Payment.cshtml.g.cs
-C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\PersonInfo.cshtml.g.cs
-C:\Users\Ngina\desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\FinalPage.cshtml.g.cs
-C:\Users\Ngina\desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLogin.cshtml.g.cs
-C:\Users\Ngina\desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\PendingClients.cshtml.g.cs
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AdminLogin.cshtml.g.cs
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Admin\PendingClients.cshtml.g.cs
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Client\Payment.cshtml.g.cs
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Client\PersonInfo.cshtml.g.cs
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Faqs.cshtml.g.cs
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Home\FinalPage.cshtml.g.cs

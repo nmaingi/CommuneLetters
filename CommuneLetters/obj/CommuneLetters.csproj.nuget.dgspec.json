@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ngina\\desktop\\CommuneLetters\\CommuneLetters\\CommuneLetters.csproj": {}
+    "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\CommuneLetters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ngina\\desktop\\CommuneLetters\\CommuneLetters\\CommuneLetters.csproj": {
+    "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\CommuneLetters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ngina\\desktop\\CommuneLetters\\CommuneLetters\\CommuneLetters.csproj",
+        "projectUniqueName": "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\CommuneLetters.csproj",
         "projectName": "CommuneLetters",
-        "projectPath": "C:\\Users\\Ngina\\desktop\\CommuneLetters\\CommuneLetters\\CommuneLetters.csproj",
+        "projectPath": "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\CommuneLetters.csproj",
         "packagesPath": "C:\\Users\\Ngina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ngina\\desktop\\CommuneLetters\\CommuneLetters\\obj\\",
+        "outputPath": "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ngina\\AppData\\Roaming\\NuGet\\NuGet.Config",
