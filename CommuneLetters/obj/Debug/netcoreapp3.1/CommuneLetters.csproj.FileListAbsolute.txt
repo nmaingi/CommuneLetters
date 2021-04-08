@@ -101,7 +101,6 @@ C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\bin\Debug\netcoreapp3.1\ru\
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.Views.pdb
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.csproj.CopyComplete
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.dll
@@ -112,3 +111,17 @@ C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Raz
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Client\PersonInfo.cshtml.g.cs
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Faqs.cshtml.g.cs
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Home\FinalPage.cshtml.g.cs
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\bin\Debug\netcoreapp3.1\Remotion.Linq.dll
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\sni.dll
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\sni.dll
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard1.3\System.Data.SqlClient.dll
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard1.3\System.Data.SqlClient.dll
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\User\AdminView.cshtml.g.cs
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\User\StartPage.cshtml.g.cs

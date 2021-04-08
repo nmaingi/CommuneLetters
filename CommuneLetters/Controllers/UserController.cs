@@ -4,18 +4,42 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using CommuneLetters.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CommuneLetters.Controllers
 {
     public class UserController : Controller
     {
+        private readonly ApplicationDBContext _db;
+        public UserController(ApplicationDBContext db)
+        {
+            _db = db;
+        }
+
+        //index page//
+        [HttpGet]
+        public IActionResult StartPage()
+        {
+            return View();
+        }
+
+        //page employees can see clients
         [HttpPost]
-        public IActionResult AdminView() => View();
+        public IActionResult AdminView()
+        {
+            var displaydata = _db.ClientInfo.ToList();
+            return View(displaydata);
+        }
 
+        //page where new clients are created//
         [HttpGet]
-        public IActionResult PersonInfo() => View();
+        public IActionResult ClientInfo()
+        {
+            return View();
+        }
 
-        [HttpGet]
+        //page where payment is made//
+        [HttpPost]
         public IActionResult Payment() => View();
 
         [HttpPost]

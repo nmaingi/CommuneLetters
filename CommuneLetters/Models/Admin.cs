@@ -7,11 +7,15 @@ namespace CommuneLetters.Models
 {
     public class Adminstrator
     {
-        [Required]
+        [Key]
+
+        public string Name { get; set; }
+
+        [Required(ErrorMessage ="Enter Username: ")]
         [Display(Name ="Username: ")]
         public string Username { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="Enter Password: ")]
         [DataType(DataType.Password)]
         [Display(Name = "Password: ")]
         public string Password { get; set; }
