@@ -11,7 +11,6 @@ namespace CommuneLetters.Models
     public class Adminstrator
     {
         [Key]
-
         public string Name { get; set; }
 
         [Required(ErrorMessage ="Enter Username: ")]

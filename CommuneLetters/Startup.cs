@@ -27,9 +27,9 @@ namespace CommuneLetters
         {
             services.AddControllersWithViews();
             
-            services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Myconnection")));
+            services.AddDbContext<AdminDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Myconnection")));
             
-            services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MySecondconnection")));
+            services.AddDbContext<ClientDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MySecondconnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,7 +56,7 @@ namespace CommuneLetters
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=User}/{action=AdminView}/{id?}");
+                    pattern: "{controller=Client}/{action=CIndex}/{id?}");
             });
         }
     }
