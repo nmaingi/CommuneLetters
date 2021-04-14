@@ -56,7 +56,7 @@ namespace CommuneLetters
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=User}/{action=StartPage}/{id?}");
+                    pattern: "{controller=User}/{action=AdminView}/{id?}");
             });
         }
     }

@@ -11,58 +11,60 @@ namespace CommuneLetters.Controllers
     public class UserController : Controller
     {
         private readonly ApplicationDBContext _db;
+       
         public UserController(ApplicationDBContext db)
         {
             _db = db;
         }
 
-        //index page//
-        [HttpGet]
-        public IActionResult StartPage()
-        {
-            return View();
-        }
 
-        //page employees can see clients
-        [HttpPost]
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
+
+        //page employees can VIEW clients
+
         public IActionResult AdminView()
         {
             var displaydata = _db.ClientInfo.ToList();
             return View(displaydata);
         }
 
-        //page where new clients are created//
-        [HttpGet]
-        public IActionResult ClientInfo()
+        
+        //individual client page where Admin can EDIT status "done" or "not done" //
+        public IActionResult AdminClientSingleView()
         {
             return View();
         }
 
-        //page where payment is made//
-        [HttpPost]
-        public IActionResult Payment() => View();
 
-        [HttpPost]
-        [Route("/PersonInfo")]
-        public IActionResult PersonalInfo(string client)
+        //create page(i.e clients putting in info)//
+        public IActionResult NewClientPage()
         {
-            Repository.NewClient(new Client(client));
-            return Redirect("/Payments");     
+            return View();
         }
+
         
         [HttpPost]
-        public IActionResult Remove(string clientname)
+        public async Task<IActionResult> NewClientPage(Client newClient)
         {
-            Client client = Repository.AllClients.Where(e => e.Name == clientname).FirstOrDefault();
-            Repository.Remove(client);
-            return Redirect("PendingClients");
-        }
-             
-        
-        [HttpGet]
-        public IActionResult FinalPage() => View();
+            if (ModelState.IsValid)
+            {
+                _db.Add(newClient);
+                await _db.SaveChangesAsync();
+                return RedirectToAction("ClientFinal");
+            }
+            return View(newClient);
 
-        [HttpGet]
-        public IActionResult FAQs() => View();
+        }
+
+        public IActionResult ClientFinal()
+        {
+            return View();
+        }
+
     }
 }
+
+ 

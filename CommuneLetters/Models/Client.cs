@@ -1,18 +1,19 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 namespace CommuneLetters.Models
 {
-    //not functional until user data can be collected and stored//
+    
     public class Client
     {
         [Key]
+        public int Clientid { get; set; }
+
+        [Display(Name ="Client name")]
         public string Name { get; set; }
-        public Client(string name)
-        {
-            Name = name;
-        }
-        
+
+        [Display(Name ="Client essay")]
         public string Essay { get; set; }
 
 

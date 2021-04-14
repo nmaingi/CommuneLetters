@@ -12,7 +12,6 @@ C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Com
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.TagHelpers.input.cache
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.TagHelpers.output.cache
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.RazorCoreGenerate.cache
-C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -106,9 +105,7 @@ C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Com
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.dll
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.pdb
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AdminLogin.cshtml.g.cs
-C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Admin\PendingClients.cshtml.g.cs
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Client\Payment.cshtml.g.cs
-C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Client\PersonInfo.cshtml.g.cs
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Faqs.cshtml.g.cs
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Home\FinalPage.cshtml.g.cs
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
@@ -125,3 +122,6 @@ C:\Users\Ngina\desktop\communeletters\CommuneLetters\bin\Debug\netcoreapp3.1\run
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\User\AdminView.cshtml.g.cs
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\User\StartPage.cshtml.g.cs
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\User\ClientInfo.cshtml.g.cs
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\User\ClientFinal.cshtml.g.cs
+C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\User\NewClientPage.cshtml.g.cs
