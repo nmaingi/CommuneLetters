@@ -37,7 +37,7 @@ namespace CommuneLetters.Controllers
             {
                 _cdb.Add(newClient);
                 await _cdb.SaveChangesAsync();
-                return RedirectToAction("CIndex");
+                return RedirectToAction("Index","Home");
             }
             return View(newClient);
         }
