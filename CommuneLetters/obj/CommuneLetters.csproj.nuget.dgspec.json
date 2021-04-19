@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\CommuneLetters.csproj": {}
+    "C:\\Users\\Ngina\\Desktop\\CommuneLetters\\CommuneLetters\\CommuneLetters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\CommuneLetters.csproj": {
+    "C:\\Users\\Ngina\\Desktop\\CommuneLetters\\CommuneLetters\\CommuneLetters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\CommuneLetters.csproj",
+        "projectUniqueName": "C:\\Users\\Ngina\\Desktop\\CommuneLetters\\CommuneLetters\\CommuneLetters.csproj",
         "projectName": "CommuneLetters",
-        "projectPath": "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\CommuneLetters.csproj",
+        "projectPath": "C:\\Users\\Ngina\\Desktop\\CommuneLetters\\CommuneLetters\\CommuneLetters.csproj",
         "packagesPath": "C:\\Users\\Ngina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\obj\\",
+        "outputPath": "C:\\Users\\Ngina\\Desktop\\CommuneLetters\\CommuneLetters\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ngina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.14, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.5, )"
@@ -59,6 +63,14 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[39.45.0, )"
             }
           },
           "imports": [

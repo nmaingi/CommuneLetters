@@ -12,7 +12,6 @@ namespace CommuneLetters.Controllers
     public class AdminController : Controller
     {
         private readonly AdminDBContext _adb;
-        private readonly SignInManager<AdminstratorUser> signInManger;
 
         public AdminController(AdminDBContext adb)
         {
@@ -51,36 +50,73 @@ namespace CommuneLetters.Controllers
             return View();
         }
 
+        public IActionResult Profile()
+        {
+            return RedirectToAction("CIndex", "Client");
+        }
+
+
+
+        public async Task<IActionResult> Edit(string? id)
+        {
+            if (id == null)
+            {
+                return RedirectToAction("AIndex");
+            }
+
+            var admindetails = await _adb.AdminInfo.FindAsync(id);
+            return View(admindetails);
+
+        }
+
         [HttpPost]
-        public async Task<IActionResult> Login(Adminstrator adminstrator)
+        public async Task<IActionResult> Edit(Adminstrator currentAdmin)
         {
             if (ModelState.IsValid)
             {
-                var result = await signInManger.PasswordSignInAsync(adminstrator.Username, adminstrator.Password,false,false);
-                
-                if (result.Succeeded)
-                {
-                    return RedirectToAction("Profile");
-                }
-                
-                ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
+                _adb.Update(currentAdmin);
+                await _adb.SaveChangesAsync();
+                return RedirectToAction("AIndex");
+
             }
-            return View(adminstrator);
+            return View(currentAdmin);
         }
 
-        public IActionResult Profile()
+        public async Task<IActionResult> Details(string id)
+        {
+            if (id == null)
+            {
+                return RedirectToAction("AIndex");
+            }
+
+            var admindetails = await _adb.AdminInfo.FindAsync(id);
+            return View(admindetails);
+
+        }
+
+        public IActionResult Delete()
         {
             return View();
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Delete(string id)
+
+        {
+            var admindetails = await _adb.AdminInfo.FindAsync(id);
+            _adb.AdminInfo.Remove(admindetails);
+            await _adb.SaveChangesAsync();
+
+            return RedirectToAction("AIndex");
+
+        }
+
 
 
 
     }
 
-    internal class AdminstratorUser
-    {
-    }
+
 }
 
  
