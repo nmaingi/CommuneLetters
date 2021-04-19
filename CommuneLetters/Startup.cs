@@ -10,6 +10,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CommuneLetters.Models;
 using Microsoft.EntityFrameworkCore;
+using Stripe;
+using CommuneLetters.data;
 
 namespace CommuneLetters
 {
@@ -32,11 +34,15 @@ namespace CommuneLetters
             services.AddDbContext<ClientDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MySecondconnection")));
 
             services.AddControllers().AddNewtonsoftJson();
+
+            services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
         }
+        
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            StripeConfiguration.SetApiKey(Configuration.GetSection("Stripe")["SecretKey"]);
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

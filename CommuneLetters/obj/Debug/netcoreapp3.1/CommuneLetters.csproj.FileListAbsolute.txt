@@ -191,3 +191,4 @@ C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\bin\Debug\netcoreapp3.1\Mic
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\CheckoutApi\Create.cshtml.g.cs
+C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Checkout.cshtml.g.cs

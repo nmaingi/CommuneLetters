@@ -1,0 +1,36 @@
+﻿@using Microsoft.Extensions.Options
+@inject IOptions<CommuneLetters.data.StripeSettings> Stripe
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h1>Checkout</h1>
+<!--<div>
+    <input type="submit" value="Edit Entry" onClick="myFunction()" />
+    <script>
+        function myFunction() {
+            window.location = "/client/addclient/id=item.name";
+        }
+    </script>
+
+</div>-->
+
+<div class="text-center">
+    <form asp-action="checkout" asp-controller="home" method="post">
+        <article>
+            <label>$11.00</label>
+        </article>
+        <script src="//checkout.stripe.com/v2/checkout.js"
+                class="stripe-button"
+                data-key="@Stripe.Value.PublishableKey"
+                data-locale="auto"
+                data-description="Sample Charge"
+                data-amount="500">
+
+        </script>
+
+    </form>
+
+</div>
+
