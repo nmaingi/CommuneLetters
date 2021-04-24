@@ -1,36 +1,42 @@
-﻿@using Microsoft.Extensions.Options
-@inject IOptions<CommuneLetters.data.StripeSettings> Stripe
+﻿
 
 @{
     ViewData["Title"] = "Checkout";
 }
+ <section class="meat">
+        <h3>Checkout</h3>
 
-<h1>Checkout</h1>
-<!--<div>
-    <input type="submit" value="Edit Entry" onClick="myFunction()" />
-    <script>
-        function myFunction() {
-            window.location = "/client/addclient/id=item.name";
-        }
-    </script>
+                    <label>$11.00</label>
+                    <button id="checkout-button">Checkout</button>
 
-</div>-->
+  <script type="text/javascript">
+                    // Create an instance of the Stripe object with your publishable API key
+                    var stripe = Stripe("pk_test_51IhlLWCIxG1WF7GFprQg8AAHxJo3fPqmd1N4B5XZCLGYfbkg2R6EgRdMR6db1ECb8sMgtaf3F1HvSWIcBuHEGAdI009bURbWCK");
+                    var checkoutButton = document.getElementById("checkout-button");
 
-<div class="text-center">
-    <form asp-action="checkout" asp-controller="home" method="post">
-        <article>
-            <label>$11.00</label>
-        </article>
-        <script src="//checkout.stripe.com/v2/checkout.js"
-                class="stripe-button"
-                data-key="@Stripe.Value.PublishableKey"
-                data-locale="auto"
-                data-description="Sample Charge"
-                data-amount="500">
+      checkoutButton.addEventListener("click", function () {
+          console.log("checkout button clicker");
+                        fetch("/create-checkout", {
+                            method: "POST",
+                        })
+                            .then(function (response) {
+                                return response.json();
+                            })
+                            .then(function (session) {
+                                return stripe.redirectToCheckout({ sessionId: session.id });
+                            })
+                            .then(function (result) {
+                                // If redirectToCheckout fails due to a browser or network
+                                // error, you should display the localized error message to your
+                                // customer using error.message.
+                                if (result.error) {
+                                    alert(result.error.message);
+                                }
+                            })
+                            .catch(function (error) {
+                                console.error("Error:", error);
+                            });
+ });</script>
 
-        </script>
 
-    </form>
-
-</div>
-
+    </section>

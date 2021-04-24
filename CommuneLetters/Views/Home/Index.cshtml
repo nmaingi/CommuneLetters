@@ -3,10 +3,51 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Welcome!</h1>
-<nav><a asp-area="" asp-controller="Admin" asp-action="Login">Admin</a></nav>
 
-<p>Im sure you are wondering what we are about.</p>
+<body>
 
-<a asp-area="" asp-controller="Client" asp-action="AddClient">Click here to begin</a>
+    <section class="meat">
+    <div >
+        <h1>Welcome!</h1>
+        <p>Im sure you are wondering what we are about.</p>
+    </div>
+    </section>
+
+
+   <!--This is the second page--> 
+    
+    
+    <section class="pagetwo" >
+        <h2>What we are about</h2>
+        <p>this is where you learn about this site, <br /> so I shoud move the enter button to the final page</p>
+        
+        <div class="row">
+            
+            <div class="pagetwo-col">
+                <h3>listen</h3>
+                <p>
+                    Explain how we listen
+                </p>
+            </div>
+            
+            <div class="pagetwo-col">
+                <h3>Communicate</h3>
+                <p>
+                    Explain how we communicate
+                </p>
+            
+            </div>
+        </div>
+    
+    </section>
+
+    <!--This is the third and final page-->
+    
+    <section class="pagethree">
+        <h2>Ready to begin</h2>
+        <p>this is where the begin button will be</p>
+        <a class="begin" asp-controller="Client" asp-action="AddClient">Begin</a>
+
+    </section>
+</body>
 

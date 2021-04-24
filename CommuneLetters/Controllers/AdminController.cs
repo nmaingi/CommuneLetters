@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using CommuneLetters.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using System.Web;
 
 namespace CommuneLetters.Controllers
 {
@@ -49,6 +50,20 @@ namespace CommuneLetters.Controllers
         {
             return View();
         }
+       
+        [HttpPost]
+        public IActionResult Login(string id)
+        {     
+            if (id == null)
+            {
+                ModelState.AddModelError(string.Empty, "Invalid, try again");
+            }
+
+            var admindetails = _adb.AdminInfo.FindAsync(id);
+            return View(admindetails);
+
+        }
+
 
         public IActionResult Profile()
         {

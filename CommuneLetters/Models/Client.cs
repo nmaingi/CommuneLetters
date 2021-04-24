@@ -9,12 +9,12 @@ namespace CommuneLetters.Models
     {
         
         [Key]
-        [Display(Name ="Client name")]
+        [Display(Name ="Your name")]
         [Required(ErrorMessage ="This Field is required")]
         public string Name { get; set; }
 
         [Required(ErrorMessage ="This Field is required")]
-        [Display(Name ="Client essay")]
+        [Display(Name ="Tell us about yourself")]
         public string Essay { get; set; }
 
 

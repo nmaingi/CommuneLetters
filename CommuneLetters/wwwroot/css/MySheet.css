@@ -1,0 +1,278 @@
+﻿ 
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courgette', cursive;
+    color:lavender;
+}
+
+
+.page{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/IMG_2354.jpg);
+    background-position:center;
+    background-size:cover;
+    position:relative;
+}
+
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+nav img{
+    width:200px;
+}
+
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+.nav-links a {
+        text-decoration: none;
+        font-size: 14px;
+}
+
+
+.meat{
+
+    width: 90%;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+
+}
+.meat h1{
+    font-size:74px;
+}
+
+.meat p{
+    margin: 10px 0 40px;
+    font-size:22px;
+    color:white;
+}
+
+.begin{
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+    border: 1px solid #0094ff;
+    padding:12px 42px;
+    font-size:20px;
+    background:transparent;
+    position:relative;
+    cursor:pointer;
+}
+
+.begin:hover {
+    border:1px solid #0094ff;
+    background: #0094ff;
+    transition:1s;
+}
+
+/*this is the second page*/
+
+.pagetwo{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}
+h2{
+    color:black;
+    font-size:60px;
+    font-weight:600;
+}
+p{
+    color:black;
+    font-size:22px;
+    font-weight: 300;
+    line-height:22px;
+    padding: 10px;
+}
+
+.row{
+    margin:5%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.pagetwo-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius:10px;
+    margin-bottom:20px;
+    padding:20px 12px;
+    box-sizing:border-box;
+    transition:0.5s;
+}
+
+h3{
+    color:black;
+    text-align:center;
+    font-weight:600;
+    margin:10px 0;
+}
+
+.pagetwo-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+/*Page three*/
+.pagethree{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+}
+
+.login-box{
+    width: 280px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-box h2{
+    
+    font-size:40px;
+    border-bottom: 6px solid rgb(255, 106, 0);
+    margin-bottom: 30px;
+    padding:13px 0;
+    color:lavender;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    color:black;
+}
+
+.textbox form-group{
+    border:none;
+    outline:none;
+    background:none;
+    color:lavender;
+    font-size:20px;
+    width:120px;
+    float:left;
+    margin:50px;
+}
+
+.login-enter{
+    display: inline-block;
+    text-decoration: none;
+    color: lavender;
+    padding: 5px 30px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.login-enter:hover {
+    background: rgb(255, 106, 0);
+    transition: 1s;
+}
+
+
+.list h2{
+    color:lavender;
+}
+
+.table{
+    font-size:20px;
+    position: relative;
+    width:650px;
+    margin:100px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.table thead{
+    font-size:30px;
+}
+
+.table tbody{
+    padding:10px 20px;
+    margin:5px 0;
+    transition:.5s;
+}
+
+.fill{
+
+}
+
+.submit{
+    display: inline-block;
+    text-decoration: none;
+    color: lavender;
+    border: 1px solid #0094ff;
+    padding: 5px 30px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.submit:hover {
+    border: 1px solid #0094ff;
+    background: #0094ff;
+    transition: 1s;
+}
+
+.login-danger {
+    display: inline-block;
+    text-decoration: none;
+    color: lavender;
+    padding: 5px 30px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.login-danger:hover {
+    
+    background: rgb(198, 34, 34);
+    transition: 1s;
+}
+
+.Essay{
+    width:140%;
+    border-radius:110px;
+    margin:10px;
+    padding:8px;
+    box-sizing:content-box;
+    color:black;
+    height:350%;
+}
+
+.Name{
+    padding-bottom:10px;
+    padding:6px;
+    width:100%;
+    border-radius:90px;
+    color:black;
+    box-sizing:border-box;
+    float:left;
+}
+
+.big{
+    font-size:45px;
+}
+
+
+
+

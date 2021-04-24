@@ -12,6 +12,7 @@ using CommuneLetters.Models;
 using Microsoft.EntityFrameworkCore;
 using Stripe;
 using CommuneLetters.data;
+using System.Web;
 
 namespace CommuneLetters
 {
@@ -36,6 +37,9 @@ namespace CommuneLetters
             services.AddControllers().AddNewtonsoftJson();
 
             services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
+
+            services.AddDistributedMemoryCache();
+
         }
         
 
@@ -43,6 +47,7 @@ namespace CommuneLetters
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             StripeConfiguration.SetApiKey(Configuration.GetSection("Stripe")["SecretKey"]);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
