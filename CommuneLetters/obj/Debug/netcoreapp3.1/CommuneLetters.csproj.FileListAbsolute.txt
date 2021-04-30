@@ -184,13 +184,10 @@ C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Raz
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Login.cshtml.g.cs
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\bin\Debug\netcoreapp3.1\Stripe.net.dll
-C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\CheckoutApi\cancel.cshtml.g.cs
-C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\CheckoutApi\Success.cshtml.g.cs
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\CommuneLetters.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\CheckoutApi\Create.cshtml.g.cs
 C:\Users\Ngina\Desktop\CommuneLetters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Checkout.cshtml.g.cs
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddAdmin.cshtml.g.cs
 C:\Users\Ngina\desktop\communeletters\CommuneLetters\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Edit.cshtml.g.cs

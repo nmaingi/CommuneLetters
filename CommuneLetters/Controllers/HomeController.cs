@@ -7,14 +7,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CommuneLetters.Models;
 using Stripe.Checkout;
-using CommuneLetters.data;
-using Stripe;
 
 namespace CommuneLetters.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+
+
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -25,42 +25,48 @@ namespace CommuneLetters.Controllers
         {
             return View();
         }
-        
 
-            [Route("create-checkout")]
-            public IActionResult Checkout()
+        public IActionResult Checkout()
+        {
+            return View();
+        }
+
+        [Route("/create-checkout")]
+        public IActionResult Create()
+        {
+            var options = new SessionCreateOptions
             {
-                var domain = "http://localhost:44301";
-                var options = new SessionCreateOptions
+                PaymentMethodTypes = new List<string>
                 {
-                    PaymentMethodTypes = new List<string>
-                {
-                  "card",
+                    "card",
                 },
-                    LineItems = new List<SessionLineItemOptions>
+                
+                LineItems = new List<SessionLineItemOptions>
                 {
-                  new SessionLineItemOptions
-                  {
-                    PriceData = new SessionLineItemPriceDataOptions
+                    new SessionLineItemOptions
                     {
-                      UnitAmount = 1100,
-                      Currency = "usd",
-                      ProductData = new SessionLineItemPriceDataProductDataOptions
-                      {
-                        Name = "Done",
-                      },
+                        PriceData = new SessionLineItemPriceDataOptions
+                        {
+                            UnitAmount = 1100,
+                            Currency = "usd",
+                            ProductData = new SessionLineItemPriceDataProductDataOptions
+                            {
+                                Name = "CommuneLetters",
+                            },
+                        },
+                        Quantity = 1,
                     },
-                    Quantity = 1,
-                  },
                 },
-                    Mode = "payment",
-                    SuccessUrl = domain + "/success.html",
-                    CancelUrl = domain + "/cancel.html",
-                };
+                
+                Mode = "payment",
+                SuccessUrl = "/success.html",
+                CancelUrl = "/cancel.html",
+            };
                 var service = new SessionService();
                 Session session = service.Create(options);
-                return Json(new { id = session.Id });
-            }
+            
+            return Json(new{ id = session.Id });
+        }
 
             public IActionResult Privacy()
             {

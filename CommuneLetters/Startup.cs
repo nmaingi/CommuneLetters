@@ -13,6 +13,8 @@ using Microsoft.EntityFrameworkCore;
 using Stripe;
 using CommuneLetters.data;
 using System.Web;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CommuneLetters
 {
@@ -40,13 +42,14 @@ namespace CommuneLetters
 
             services.AddDistributedMemoryCache();
 
+
         }
         
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            StripeConfiguration.SetApiKey(Configuration.GetSection("Stripe")["SecretKey"]);
+            StripeConfiguration.ApiKey = "sk_test_51IhlLWCIxG1WF7GFSSialMrZownTNjBqGUTnYV6jftYoEvpbq5sIuSB9HrAa1KngpdRkG8BcoHvSNxjzIF03nO2t00vCHZY646";
 
             if (env.IsDevelopment())
             {
