@@ -210,9 +210,6 @@ h3{
     transition:.5s;
 }
 
-.fill{
-
-}
 
 .submit{
     display: inline-block;
@@ -250,18 +247,15 @@ h3{
 }
 
 .Essay{
-    width:140%;
-    border-radius:110px;
-    margin:10px;
-    padding:8px;
-    box-sizing:content-box;
     color:black;
-    height:350%;
+    resize:none;
 }
+
+
 
 .Name{
     padding-bottom:10px;
-    padding:6px;
+    padding:10px;
     width:100%;
     border-radius:90px;
     color:black;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\CommuneLetters.csproj": {}
+    "C:\\Users\\Ngina\\Desktop\\CommuneLetters\\CommuneLetters\\CommuneLetters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\CommuneLetters.csproj": {
+    "C:\\Users\\Ngina\\Desktop\\CommuneLetters\\CommuneLetters\\CommuneLetters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\CommuneLetters.csproj",
+        "projectUniqueName": "C:\\Users\\Ngina\\Desktop\\CommuneLetters\\CommuneLetters\\CommuneLetters.csproj",
         "projectName": "CommuneLetters",
-        "projectPath": "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\CommuneLetters.csproj",
+        "projectPath": "C:\\Users\\Ngina\\Desktop\\CommuneLetters\\CommuneLetters\\CommuneLetters.csproj",
         "packagesPath": "C:\\Users\\Ngina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ngina\\desktop\\communeletters\\CommuneLetters\\obj\\",
+        "outputPath": "C:\\Users\\Ngina\\Desktop\\CommuneLetters\\CommuneLetters\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ngina\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
@@ -91,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

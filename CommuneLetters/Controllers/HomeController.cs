@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CommuneLetters.Models;
 using Stripe.Checkout;
+using Stripe;
 
 namespace CommuneLetters.Controllers
 {
@@ -31,16 +32,19 @@ namespace CommuneLetters.Controllers
             return View();
         }
 
-        [Route("/create-checkout")]
-        public IActionResult Create()
-        {
+        [Route("create-checkout")]
+        [HttpPost]
+        public ActionResult Create()
+        { 
+
+            var domain = "http://localhost:44301";
             var options = new SessionCreateOptions
             {
                 PaymentMethodTypes = new List<string>
                 {
                     "card",
                 },
-                
+
                 LineItems = new List<SessionLineItemOptions>
                 {
                     new SessionLineItemOptions
@@ -57,15 +61,15 @@ namespace CommuneLetters.Controllers
                         Quantity = 1,
                     },
                 },
-                
+
                 Mode = "payment",
-                SuccessUrl = "/success.html",
-                CancelUrl = "/cancel.html",
+                SuccessUrl = domain + "/Home/Success",
+                CancelUrl = domain + "/Home/Cancel",
             };
-                var service = new SessionService();
-                Session session = service.Create(options);
             
-            return Json(new{ id = session.Id });
+            var service = new SessionService();
+            Session session = service.Create(options);
+            return Json(new { id = session.Id });
         }
 
             public IActionResult Privacy()
@@ -77,8 +81,13 @@ namespace CommuneLetters.Controllers
             {
                 return View();
             }
-
             public IActionResult Success()
+            {
+                return View();
+            }
+
+
+            public IActionResult Cancel()
             {
                 return View();
             }
