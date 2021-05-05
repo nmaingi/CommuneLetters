@@ -4,29 +4,29 @@
     ViewData["Title"] = "AddClient";
 }
 <section class="meat">
-<h1>Hello!</h1>
+<h2>Hello!</h2>
 
 <h4>Tell Us about yourself</h4>
 <hr />
-<div class="row">
+<div>
     <div class="fill">
         <form asp-action="AddClient">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" ></div>
             
-            <div class="form-group">
-                <label class="control-label"></label>
-                <input placeholder="Your name" asp-for="Name" />
+            <div class="Add-group">
+                
+                <input class="Name" placeholder="Your name" asp-for="Name" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             
-            <div class="form-group">
-                <label class="control-label"></label>
-                <textarea placeholder="Tell us about yourself" asp-for="Essay" rows="10" cols="40" spellcheck="true"></textarea>
-                <span asp-validation-for="Essay" class="Essay"></span>
+            <div class="Add-group">
+                
+                <textarea placeholder="Tell us about yourself" asp-for="Essay" spellcheck="true" class="Essay"></textarea>
+                <span asp-validation-for="Essay" ></span>
             </div>
             <div class="form-group">
            
-                <input id="checkout-button" type="submit" value="Payment" class="submit" />
+                <input type="submit" value="Continue" class="submit" />
 
             </div>
         </form>

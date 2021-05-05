@@ -6,46 +6,59 @@
 
 <body>
 
+
     <section class="meat">
-    <div >
-        <h1>Welcome!</h1>
-        <p>Im sure you are wondering what we are about.</p>
-    </div>
+        
+            <ul class="navbar">
+                <li><a asp-action="Login" asp-controller="Admin">Admin</a></li>
+            </ul>
+
+
+        <div>
+            &emsp;<h1>Welcome!</h1>
+            <p>
+                Im sure you are wondering what we are about.<br />Well we all get lonely sometimes, infact eventhough<br /> our need to connect is innate,
+                many of us frequently feel<br /> alone. Accoding to the <a href="https://www.hrsa.gov/enews/past-issues/2019/january-17/loneliness-epidemic">Health Resources & Services Adminstration</a>
+                <br />Loneliness and social isolation can be as damaging <br />to health as smoking 15 cigarettes a day. <br />WHICH IS WHERE WE COME IN. 
+            </p>
+        </div>
     </section>
 
 
-   <!--This is the second page--> 
-    
-    
-    <section class="pagetwo" >
+    <!--This is the second page-->
+
+
+    <section class="pagetwo">
         <h2>What we are about</h2>
-        <p>this is where you learn about this site, <br /> so I shoud move the enter button to the final page</p>
-        
+        <p>In this day and age snail mail letters are quickly becoming a thing of the past <br /> but here we would like to bring it back in a small way. Reciveving a 
+        hand written letter makes a person feels special because you the READER know the WRITER had you in mind with<br /> every word writen, pen to paper was meant for you.<br />With each
+        letter we write we hope to make the world a less lonely place.</p>
+
         <div class="row">
-            
+
             <div class="pagetwo-col">
-                <h3>listen</h3>
+                <h3>We listen</h3>
                 <p>
-                    Explain how we listen
+                   You tell us a little about yourself,<br />if there is thing you wish to hear.<br />
                 </p>
             </div>
-            
+
             <div class="pagetwo-col">
-                <h3>Communicate</h3>
+                <h3>We Commune</h3>
                 <p>
-                    Explain how we communicate
+                    We write you, with every penstroke consious<br />
+                    that we a writing to a person deserving of attention.
                 </p>
-            
+
             </div>
         </div>
-    
+
     </section>
 
     <!--This is the third and final page-->
-    
+
     <section class="pagethree">
         <h2>Ready to begin</h2>
-        <p>this is where the begin button will be</p>
         <a class="begin" asp-controller="Client" asp-action="AddClient">Begin</a>
 
     </section>

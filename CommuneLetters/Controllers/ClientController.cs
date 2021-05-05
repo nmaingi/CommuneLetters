@@ -16,14 +16,14 @@ namespace CommuneLetters.Controllers
         {
             _cdb = cdb;
         }
-        
+
         public IActionResult CIndex()
         {
             var clientlist = _cdb.ClientInfo.ToList();
             return View(clientlist);
         }
 
-        
+
         public IActionResult AddClient()
         {
             return View();
@@ -42,26 +42,28 @@ namespace CommuneLetters.Controllers
             return View(newClient);
         }
 
-        public async Task<IActionResult> Edit(string? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
             {
-                return RedirectToAction("CIndex");
+                var clientdetails = await _cdb.ClientInfo.FindAsync(id);
+                return View(clientdetails);
             }
-
-            var clientdetails = await _cdb.ClientInfo.FindAsync(id);
-            return View(clientdetails);
+            
+            return View();
 
         }
 
         [HttpPost]
         public async Task<IActionResult> Edit(Client currentClient)
         {
+            //var clientdetails = await _cdb.ClientInfo.FindAsync(currentClient);
+
             if (ModelState.IsValid)
             {
                 _cdb.Update(currentClient);
                 await _cdb.SaveChangesAsync();
-                return RedirectToAction("CIndex");
+                return RedirectToAction("Checkout","Home");
 
             }
             return View(currentClient);
@@ -78,6 +80,8 @@ namespace CommuneLetters.Controllers
             return View(clientdetails);
 
         }
+
+
 
         public IActionResult Delete()
         {

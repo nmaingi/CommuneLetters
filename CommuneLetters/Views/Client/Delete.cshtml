@@ -4,24 +4,15 @@
     ViewData["Title"] = "Delete";
 }
 <section class="meat">
-<h1>Delete</h1>
 
-<h3 class="del-h3">Are you sure you want to delete this client?</h3>
+<h2 class="del-h3">Are you sure you want to delete this client?</h2>
 <div>
     <hr />
     <dl class="row">
-        <dt class = "big">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
         <dd class = "big">
             @Html.DisplayFor(model => model.Name)
         </dd>
-        <dt class = "big">
-            @Html.DisplayNameFor(model => model.Essay)
-        </dt>
-        <dd class = "big">
-            @Html.DisplayFor(model => model.Essay)
-        </dd>
+
     </dl>
     
     <form asp-action="Delete">

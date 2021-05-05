@@ -6,8 +6,6 @@
 <section class="meat">
 <div class="list">
 <h2>List of Clients</h2>
-    <p><a asp-action="AddAdmin" asp-controller="Admin" >Add Admin</a></p>
-
 
 <table class="table">
     <thead>
@@ -25,7 +23,8 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new {  id=item.Name }, new { @class = "submit" }) |
+                <!--@Html.ActionLink("Edit", "Edit", new {  id=item.Name }, new { @class = "submit" }) |-->
+                
                 @Html.ActionLink("Details", "Details", new {  id=item.Name }, new { @class = "login-enter" }) |
                 @Html.ActionLink("Delete", "Delete", new { id=item.Name }, new { @class = "login-danger" })
             </td>
